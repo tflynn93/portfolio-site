@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: parseInt(process.env.VITE_PORT || '5173', 10),
+    allowedHosts: ['tflynn.info'],
     open: true,
   },
 })
